@@ -29,17 +29,9 @@ public class Main
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-    	// OLD? 0.0.3
-    	//ApplicationManager.registerApplication(new TestApp(Info.MODID + ":testapp", "Test"));
-    	//ApplicationManager.registerApplication(new Blocker(Info.MODID + ":blocker", "Blocker"));
-    	//ApplicationManager.registerApplication(new Weby(Info.MODID + ":weby", "Weby"));
-    	//ApplicationManager.registerApplication(new Minesweeper(Info.MODID + ":sweeper", "Minesweeper"));
-    	// NEW? 0.1.0
     	ApplicationManager.registerApplication(new ResourceLocation(Info.MODID, "pastefile"), PasteFile.class);
-		ApplicationManager.registerApplication(new ResourceLocation(Reference.MOD_ID, "note_stash"), ApplicationNoteStash.class);
-		ApplicationManager.registerApplication(new ResourceLocation(Reference.MOD_ID, "pixel_painter"), ApplicationPixelPainter.class);
     }
-    
+	
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
